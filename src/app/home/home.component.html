@@ -1,0 +1,25 @@
+<p>
+  {{homeTitle}}
+</p>
+
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>
+<button (click)="fireYellEvent($event)">Hit me</button>
+
+
+<!----------
+<ng-content></ng-content>
+
+-- 2-way data binding --
+-- så vad den första inputen för är att varje gång någon uppdaterar name, så uppdateras det i modellen också----
+<label>Name :</label>
+<input [(ngModel)]="ninja.name" />
+<label>Belt :</label>
+<input [(ngModel)]="ninja.belt" />  ---ninja.name hämtar joshi från .ts så Yoshi blir defaultvärde. Men man kan ändra direkt på sidan. 
+Och det är det som gör 2 way databinding -----
+
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>
+---->
+
+
